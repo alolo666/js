@@ -1,0 +1,17 @@
+if(document.getElementById('checkBlockerDiv')){
+} else {
+    document.getElementsByClassName("blockerAlert")[0].style.display = "block";
+    document.addEventListener("mousedown",function (e) {
+        if (e.button == 2)
+        {
+            alert("You can't use the mouse right button now !");
+            return false;
+        }
+    });
+    document.addEventListener("keydown",function (e) {
+        if (e.keyCode == 123)
+        {
+            e.preventDefault();
+        }
+    });
+}
