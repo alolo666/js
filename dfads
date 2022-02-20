@@ -14,4 +14,3 @@ if(document.getElementById('checkBlockerDiv')){
             e.preventDefault();
         }
     });
-}
